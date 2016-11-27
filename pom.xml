@@ -91,7 +91,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>LaurenLandscapesJava</finalName>
+        <finalName>LaurenLandscapesJava.war</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
