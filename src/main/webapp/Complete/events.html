@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<link rel="stylesheet" type="text/css" href="css/event.css">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<body>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">My Profile</a>
+  <a href="#">My Events</a>
+  <a href="#">My Routes</a>
+  <a href="index.html">Logout</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<h2>Event swaper</h2>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="src/event1.png" style="width:100%">
+  <div class="text">Event One</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="src/event2.png" style="width:100%">
+  <div class="text">Event Two</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="src/event3.jpg" style="width:100%">
+  <div class="text">Event Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)"><</a>
+<a class="next" onclick="plusSlides(1)">></a>
+
+</div>
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+  
+}
+</script>
+
+</body>
+</html> 
