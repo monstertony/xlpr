@@ -1,10 +1,10 @@
 applications:
-- path: LaurenLandscapes.war
+- path: LaurenLandscapesJava.war
   memory: 512M
   instances: 1
   domain: mybluemix.net
   name: xlpr
-  host: xlpr1
+  host: xlpr
   disk_quota: 1024M
   services:
   - xlpr-cloudantNoSQLDB
