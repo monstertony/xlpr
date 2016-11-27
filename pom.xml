@@ -91,7 +91,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>javaCloudantWorkloadSchedulerApp</finalName>
+        <finalName>LaurenLandscapesJava</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
