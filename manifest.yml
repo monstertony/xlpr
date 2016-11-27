@@ -4,7 +4,7 @@ applications:
   instances: 1
   domain: mybluemix.net
   name: xlpr
-  host: --random-route
+  host: xlpr
   disk_quota: 1024M
   services:
   - xlpr-cloudantNoSQLDB
